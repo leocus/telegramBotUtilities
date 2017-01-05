@@ -27,33 +27,12 @@ public class Chat {
 	}
 
 	public Chat(JSONObject object) {
-		
 		try {
 			id = object.getInt("id");
-		} catch (JSONException e) {
-		}
-
-		try {
 			type = object.getString("type");
-		} catch (JSONException e) {
-		}
-
-		try {
 			title = object.getString("title");
-		} catch (JSONException e) {
-		}
-
-		try {
 			username = object.getString("username");
-		} catch (JSONException e) {
-		}
-
-		try {
 			first_name = object.getString("first_name");
-		} catch (JSONException e) {
-		}
-
-		try {
 			last_name = object.getString("last_name");
 		} catch (JSONException e) {
 		}
