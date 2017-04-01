@@ -12,12 +12,10 @@ public class Chat {
 	private String last_name;
 
 	public Chat(int id) {
-		super();
 		this.id = id;
 	}
 
 	public Chat(int id, String type, String title, String username, String first_name, String last_name) {
-		super();
 		this.id = id;
 		this.type = type;
 		this.title = title;
