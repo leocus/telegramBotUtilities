@@ -300,7 +300,7 @@ public class TelegramBot {
 					new StringBody(Integer.toString(reply_to_message_id), ContentType.DEFAULT_TEXT));
 		if (reply_markup != null)
 			builder.addPart("reply_markup",
-					new StringBody(URLEncoder.encode(reply_markup.toJSONString(), "utf-8"), ContentType.DEFAULT_TEXT));
+					new StringBody(reply_markup.toJSONString(), ContentType.DEFAULT_TEXT));
 		if (duration > 0)
 			builder.addPart("duration", new StringBody(Integer.toString(duration), ContentType.DEFAULT_TEXT));
 		if (performer != null)
@@ -341,7 +341,7 @@ public class TelegramBot {
 					new StringBody(Integer.toString(reply_to_message_id), ContentType.DEFAULT_TEXT));
 		if (reply_markup != null)
 			builder.addPart("reply_markup",
-					new StringBody(URLEncoder.encode(reply_markup.toJSONString(), "utf-8"), ContentType.DEFAULT_TEXT));
+					new StringBody(reply_markup.toJSONString(), ContentType.DEFAULT_TEXT));
 		if (duration > 0)
 			builder.addPart("duration", new StringBody(Integer.toString(duration), ContentType.DEFAULT_TEXT));
 		if (performer != null)
